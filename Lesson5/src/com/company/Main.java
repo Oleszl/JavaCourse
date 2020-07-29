@@ -55,5 +55,8 @@ public class Main {
                 System.out.println("\nМаксимальний елемент масиву = " + max + "");
         System.out.println("Мінімальний елемент масиву = " + min + "");
         System.out.println("Мінімальний елемент масиву = " + min + "");
+        System.out.println("Мінімальний елемент масиву = " + min + "");
+        System.out.println("Мінімальний елемент масиву = " + min + "");
+
     }
 }

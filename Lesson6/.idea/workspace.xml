@@ -1,10 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="c290e89b-433a-44e8-8175-1d7f99802c4f" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="c290e89b-433a-44e8-8175-1d7f99802c4f" name="Default Changelist" comment="" />
+>>>>>>> b657a39f222b36dc0e75e0bb28278ffa9eb6c61b
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,6 +45,7 @@
         </counts>
       </usages-collector>
     </session>
+<<<<<<< HEAD
     <session id="-1882447244">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
@@ -50,6 +55,8 @@
         </counts>
       </usages-collector>
     </session>
+=======
+>>>>>>> b657a39f222b36dc0e75e0bb28278ffa9eb6c61b
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
@@ -57,7 +64,11 @@
         <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="306">
+<<<<<<< HEAD
               <caret line="18" selection-start-line="18" selection-end-line="18" />
+=======
+              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+>>>>>>> b657a39f222b36dc0e75e0bb28278ffa9eb6c61b
             </state>
           </provider>
         </entry>
@@ -107,7 +118,11 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+<<<<<<< HEAD
   <component name="ProjectFrameBounds" extendedState="6">
+=======
+  <component name="ProjectFrameBounds" extendedState="7">
+>>>>>>> b657a39f222b36dc0e75e0bb28278ffa9eb6c61b
     <option name="x" value="17" />
     <option name="y" value="-8" />
     <option name="width" value="1936" />
@@ -119,15 +134,24 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane" />
+=======
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+>>>>>>> b657a39f222b36dc0e75e0bb28278ffa9eb6c61b
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+<<<<<<< HEAD
     <property name="settings.editor.selected.configurable" value="settings.github" />
+=======
+>>>>>>> b657a39f222b36dc0e75e0bb28278ffa9eb6c61b
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -169,17 +193,30 @@
       <option name="presentableId" value="Default" />
       <updated>1596200075037</updated>
       <workItem from="1596200080566" duration="2495000" />
+<<<<<<< HEAD
       <workItem from="1596457919522" duration="1054000" />
+=======
+>>>>>>> b657a39f222b36dc0e75e0bb28278ffa9eb6c61b
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
+<<<<<<< HEAD
     <option name="totallyTimeSpent" value="3549000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2553305" />
+=======
+    <option name="totallyTimeSpent" value="2495000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <editor active="true" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25266525" />
+>>>>>>> b657a39f222b36dc0e75e0bb28278ffa9eb6c61b
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -195,7 +232,11 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Terminal" order="8" />
+<<<<<<< HEAD
       <window_info active="true" anchor="bottom" id="Event Log" order="9" side_tool="true" visible="true" weight="0.329718" />
+=======
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
+>>>>>>> b657a39f222b36dc0e75e0bb28278ffa9eb6c61b
       <window_info anchor="bottom" id="Version Control" order="10" />
       <window_info anchor="bottom" id="Messages" order="11" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -242,6 +283,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -249,6 +291,8 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> b657a39f222b36dc0e75e0bb28278ffa9eb6c61b
     <entry file="file://$PROJECT_DIR$/src/com/company/Rectangle.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="544">
@@ -263,5 +307,15 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+=======
+    <entry file="file://$PROJECT_DIR$/src/com/company/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+>>>>>>> b657a39f222b36dc0e75e0bb28278ffa9eb6c61b
   </component>
 </project>

@@ -23,6 +23,9 @@ public class Main {
 
         exponentialRecord();
 
+        ConstructorTask cst1 = new ConstructorTask(4,7,9);
+        cst1.show();
+
 
 
     }
@@ -41,4 +44,6 @@ public class Main {
 
 
     }
+
+
 }

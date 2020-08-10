@@ -17,7 +17,7 @@ public class Main {
         System.out.println("Devide: "+mc1.devide(18.5,7));
         System.out.println("Minus: "+mc1.minus(9,3));
         System.out.println("Multiply: "+mc1.multiply(2.9,7));
-        System.out.println("Plus: "+mc1.plus(5.5,9.15));
+        System.out.println("Plus : "+mc1.plus(5.5,9.15));
 
 
     }

@@ -35,11 +35,12 @@ public class Main {
 
     public static void monthCheck(int menuValue, String month) {
         boolean checkMonth = false;
+        int day = 0;
+        int seasonValue = 0;
 
 
         switch (menuValue) {
             case 1:
-
                 for (Month m : Month.values()) {
                     if ((month.equalsIgnoreCase(m.toString()))) {
                         checkMonth = true;
@@ -65,7 +66,6 @@ public class Main {
                     }
                 }
 
-
                 System.out.println("List of " + season + " season:");
                 for (Month m : Month.values()) {
                     if ((m.getSeason()).equals(season)) {
@@ -75,7 +75,6 @@ public class Main {
                 break;
 
             case 3:
-                int day = 0;
                 for (Month m : Month.values()) {
                     if (month.equalsIgnoreCase(m.toString())) {
                         day = m.getDay();
@@ -93,67 +92,61 @@ public class Main {
                 break;
 
             case 4:
-
-                int day1 = 0;
                 for (Month m : Month.values()) {
                     if (month.equalsIgnoreCase(m.toString())) {
-                        day1 = m.getDay();
+                        day = m.getDay();
                         break;
                     }
                 }
 
-                System.out.println("List of month that have less " + day1 + " day of month:");
+                System.out.println("List of month that have less " + day + " day of month:");
                 for (Month m : Month.values()) {
-                    if (m.getDay() < day1) {
+                    if (m.getDay() < day) {
                         System.out.println(m.toString());
                     }
                 }
                 break;
 
             case 5:
-                int day2 = 0;
                 for (Month m : Month.values()) {
                     if (month.equalsIgnoreCase(m.toString())) {
-                        day2 = m.getDay();
+                        day = m.getDay();
                         break;
                     }
                 }
 
-                System.out.println("List of month that have more " + day2 + " day of month:");
+                System.out.println("List of month that have more " + day + " day of month:");
                 for (Month m : Month.values()) {
-                    if (m.getDay() > day2) {
+                    if (m.getDay() > day) {
                         System.out.println(m.toString());
                     }
                 }
                 break;
 
             case 6:
-
-                int seasonValue = 0;
                 for (Month m : Month.values()) {
                     if (month.equalsIgnoreCase(m.toString())) {
                         seasonValue = m.season.ordinal();
 
-                        Season [] seasons = Season.values();
-                        if (m.season.ordinal()==3){
+                        Season[] seasons = Season.values();
+                        if (m.season.ordinal() == 3) {
                             System.out.println(Season.WINTER);
-                        }else
-                        System.out.println(seasons[seasonValue+1]);
+                        } else
+                            System.out.println(seasons[seasonValue + 1]);
 
                     }
                 }
                 break;
             case 7:
-                int seasonValue1 = 0;
                 for (Month m : Month.values()) {
                     if (month.equalsIgnoreCase(m.toString())) {
-                        seasonValue1 = m.season.ordinal();
+                        seasonValue = m.season.ordinal();
 
-                        Season [] seasons = Season.values();
-                        if (m.season.ordinal()==0){
+                        Season[] seasons = Season.values();
+                        if (m.season.ordinal() == 0) {
                             System.out.println(Season.AUTUMN);
-                        }else
-                            System.out.println(seasons[seasonValue1-1]);
+                        } else
+                            System.out.println(seasons[seasonValue - 1]);
 
                     }
                 }
@@ -176,15 +169,13 @@ public class Main {
                 }
 
             case 10:
-                int day3 = 0;
-
                 for (Month m : Month.values()) {
                     if (month.equalsIgnoreCase(m.toString())) {
-                        day3 = m.getDay();
+                        day = m.getDay();
                         break;
                     }
                 }
-                if (day3 % 2 == 0) {
+                if (day % 2 == 0) {
                     System.out.println("Month " + month.toUpperCase() + " have an even number of days");
                 } else
                     System.out.println("Month " + month.toUpperCase() + " have an odd number of days");

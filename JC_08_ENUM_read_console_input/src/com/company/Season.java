@@ -1,4 +1,6 @@
 package com.company;
 
-public class Season {
+public enum  Season {
+    WINTER,SPRING,SUMMER,AUTUMN
+
 }

@@ -1,11 +1,15 @@
 package com.company;
 
+import Task2.Methods;
+
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
+
+        int menuValue = 0;
 
         System.out.println("List of the functions that you can use:");
         System.out.println("1. Сheck if there is a specified month\n" +
@@ -17,21 +21,48 @@ public class Main {
                 "7. Display previous season\n" +
                 "8. Display all month that have an even number of days\n" +
                 "9. Display all month that have an odd number of days\n" +
-                "10. Display if the month have an even number of days\n");
+                "10. Display if the month have an even number of days");
 
-        System.out.print("Choice operation that you want to use:");
-        int menuValue = scan.nextInt();
-
-        System.out.print("\nPrint month:");
-        String month;
-        scan.nextLine();
-        month = scan.nextLine();
+        String month = null;
 
 
-        monthCheck(menuValue, month);
+        try {
+
+            boolean isValid = false;
+            System.out.println("Choice menu option:");
+
+            while (!isValid) {
+                if (scan.hasNextInt()) {
+                    menuValue = scan.nextInt();
+                    isValid = true;
+                } else {
+                    scan.next();
+                    System.out.println("Please enter integer values");
+                }
+            }
+
+            System.out.println("Print month:");
+            scan.nextLine();
+            if (scan.hasNextLine()) {
+                month = scan.nextLine();
+                scan.close();
+            }
+
+            if (isStringContainsLatinCharactersOnly(month)) {
+                monthCheck(menuValue, month);
+            } else throw new WrongInputConsoleParametersException("Only character from Latin alfabet", month);
+        } catch (WrongInputConsoleParametersException exception) {
+            exception.printStackTrace();
+            System.out.println(exception.getMessage());
+        }
 
 
     }
+
+    public static boolean isStringContainsLatinCharactersOnly(final String iStringToCheck) {
+        return iStringToCheck.matches("^[a-zA-Z.]+$");
+    }
+
 
     public static void monthCheck(int menuValue, String month) {
         boolean checkMonth = false;
@@ -43,7 +74,7 @@ public class Main {
             case 1:
                 for (Month m : Month.values()) {
                     if ((month.equalsIgnoreCase(m.toString()))) {
-                        checkMonth = tue;
+                        checkMonth = true;
                         break;
 
                     }

@@ -1,7 +1,5 @@
 package com.company;
 
-import Task2.Methods;
-
 import java.util.Scanner;
 
 public class Main {
@@ -10,20 +8,19 @@ public class Main {
         Scanner scan = new Scanner(System.in);
 
         int menuValue = 0;
+        String month = null;
 
         System.out.println("List of the functions that you can use:");
         System.out.println("1. Сheck if there is a specified month\n" +
                 "2. Display all months that have the same season\n" +
-                "3. Display all month that have the same number of day\n" +
-                "4. Display all month that have less number of day\n" +
-                "5. Display all month that have more number of day\n" +
+                "3. Display all month that have the same number of days\n" +
+                "4. Display all month that have less number of days\n" +
+                "5. Display all month that have more number of days\n" +
                 "6. Display next season\n" +
                 "7. Display previous season\n" +
                 "8. Display all month that have an even number of days\n" +
                 "9. Display all month that have an odd number of days\n" +
                 "10. Display if the month have an even number of days");
-
-        String month = null;
 
 
         try {
@@ -60,7 +57,7 @@ public class Main {
     }
 
     public static boolean isStringContainsLatinCharactersOnly(final String iStringToCheck) {
-        return iStringToCheck.matches("^[a-zA-Z.]+$");
+        return iStringToCheck.matches("^[a-zA-Z]+$");
     }
 
 
@@ -71,6 +68,8 @@ public class Main {
 
 
         switch (menuValue) {
+
+            //Сheck if there is a specified month of year
             case 1:
                 for (Month m : Month.values()) {
                     if ((month.equalsIgnoreCase(m.toString()))) {
@@ -88,6 +87,7 @@ public class Main {
 
                 break;
 
+            //Find and print all months that have the same season of year
             case 2:
                 Season season = null;
                 for (Month m : Month.values()) {
@@ -105,6 +105,7 @@ public class Main {
                 }
                 break;
 
+            //Find and print all months that have the same number of days
             case 3:
                 for (Month m : Month.values()) {
                     if (month.equalsIgnoreCase(m.toString())) {
@@ -122,6 +123,7 @@ public class Main {
                 }
                 break;
 
+            //Find and print all month that have less numbers of day then entered month
             case 4:
                 for (Month m : Month.values()) {
                     if (month.equalsIgnoreCase(m.toString())) {
@@ -138,6 +140,7 @@ public class Main {
                 }
                 break;
 
+            //Find and print all month that have more numbers of day then entered month
             case 5:
                 for (Month m : Month.values()) {
                     if (month.equalsIgnoreCase(m.toString())) {
@@ -154,6 +157,7 @@ public class Main {
                 }
                 break;
 
+            // Find and print next season of year
             case 6:
                 for (Month m : Month.values()) {
                     if (month.equalsIgnoreCase(m.toString())) {
@@ -168,6 +172,8 @@ public class Main {
                     }
                 }
                 break;
+
+            // Find and print previous season of year
             case 7:
                 for (Month m : Month.values()) {
                     if (month.equalsIgnoreCase(m.toString())) {
@@ -183,6 +189,7 @@ public class Main {
                 }
                 break;
 
+            // Check and print all month which have an even number of days\n"
             case 8:
                 System.out.println("List of month that have even numbers of day: ");
                 for (Month m : Month.values()) {
@@ -190,7 +197,9 @@ public class Main {
                         System.out.println(m.toString());
                     }
                 }
+                break;
 
+            // Check and print all month which have an odd number of days
             case 9:
                 System.out.println("List of month that have odd numbers of day: ");
                 for (Month m : Month.values()) {
@@ -198,7 +207,9 @@ public class Main {
                         System.out.println(m.toString());
                     }
                 }
+                break;
 
+            //Check if the month have an even number of days or not
             case 10:
                 for (Month m : Month.values()) {
                     if (month.equalsIgnoreCase(m.toString())) {
@@ -211,7 +222,7 @@ public class Main {
                 } else
                     System.out.println("Month " + month.toUpperCase() + " have an odd number of days");
 
-
+                break;
         }
     }
 

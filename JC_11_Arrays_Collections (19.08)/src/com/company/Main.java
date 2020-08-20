@@ -9,11 +9,17 @@ public class Main {
     public static void main(String[] args) {
 
         final int SIZE = 10;
-        Integer[] masInteger = {5, 8, 7, 59, 51, 2, 6, 9, 99, 4484};
+        Integer[] masInteger = new Integer[SIZE];
+
+        for (int i = 0; i < SIZE; i++) {
+            masInteger[i] = (int)(5+Math.random() * 80);
+            System.out.print(masInteger[i]+ " ");
+
+        }
 
 
         Arrays.sort(masInteger, Collections.reverseOrder());
-        System.out.println(Arrays.toString(masInteger));
+        System.out.println("\n"+Arrays.toString(masInteger));
 
         Arrays.sort(masInteger);
         System.out.println(Arrays.toString(masInteger));

@@ -1,6 +1,7 @@
 package com.company;
 
 import javax.crypto.spec.PSource;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Scanner;
 
@@ -30,36 +31,40 @@ public class Main {
         n = (int) (2 + Math.random() * 4);
         m = (int) (2 + Math.random() * 4);
 
-        Car[][] cars = new Car[n][m];
 
+        ArrayList<Car> cars = new ArrayList<>();
         switch (choice) {
             case 1:
                 for (int i = 0; i < n; i++) {
                     for (int j = 0; j < m; j++) {
-                        cars[i][j] = new Car(randomHorsePower(), randomReleaseDate(), randomCylinderNumber(),
-                                randomHadnlebarDiametr(), randomMaterial() );
+
+                        Car car = new Car(randomHorsePower(), randomReleaseDate(), randomCylinderNumber(),
+                                randomHadnlebarDiametr(), randomMaterial());
+                        cars.add(car);
                     }
                 }
-                System.out.println(Arrays.deepToString(cars));
+                System.out.println(cars);
                 break;
 
             case 2:
 
                 for (int i = 0; i < n; i++) {
                     for (int j = 0; j < m; j++) {
-                        cars[i][j] = new Car(randomHorsePower(), randomReleaseDate(), randomCylinderNumber(),
+                        Car car = new Car(randomHorsePower(), randomReleaseDate(), randomCylinderNumber(),
                                 randomHadnlebarDiametr(), randomMaterial() + "\n");
+                        cars.add(car);
                     }
                 }
-                System.out.println("Before change: \n" + Arrays.deepToString(cars));
+                System.out.println("Before change: \n" + cars);
 
-                for (int i = 0; i < n; i++) {
-                    for (int j = 0; j < m; j++) {
-                        cars[i][j].setReleaseDate(randomReleaseDate());
-                    }
+
+                for (Car carrs : cars) {
+                    carrs.setReleaseDate(randomReleaseDate());
                 }
+
+
                 System.out.println("After change: ");
-                System.out.println(Arrays.deepToString(cars));
+                System.out.println(cars);
                 break;
 
 

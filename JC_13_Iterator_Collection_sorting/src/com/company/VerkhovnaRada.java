@@ -55,40 +55,36 @@ public class VerkhovnaRada {
 
     }
 
-Fraction fraction2 = new Fraction();
 
     public void addDelegateToFraction() {
         Scanner scanner = new Scanner(System.in);
+        Fraction fraction2 = null;
         System.out.println("Введіть до якої фракції ви хочете додати депутата: ");
         String fractionn = scanner.nextLine();
         fraction2 = new Fraction(fractionn);
 
-                fraction2.addDelegate(fraction2);
-
-
-
-
-
+        fraction2.addDelegate(fraction2);
 
 
     }
 
-    public void removeDelegateFromFraction(){
+    public void removeDelegateFromFraction() {
         Fraction fraction = new Fraction();
         fraction.removeDelegate();
 
     }
 
-    public void deleteAllDelegateFromFraction(){
+    public void deleteAllDelegateFromFraction() {
         Fraction fraction = new Fraction("q");
         Delegate d = new Delegate(fraction);
 
         for (Fraction f : fractionArrayList) {
-            if (f.getName().equalsIgnoreCase(String.valueOf(d.getFraction())))
-            {
+            if (f.getName().equalsIgnoreCase(String.valueOf(d.getFraction()))) {
                 System.out.println(23);
+            }
         }
-    }}}
+    }
+}
 
 
 

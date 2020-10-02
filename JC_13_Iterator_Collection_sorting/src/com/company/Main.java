@@ -6,24 +6,24 @@ public class Main {
 
     public static void main(String[] args) {
 
-
+        Fraction f = new Fraction("q");
         VerkhovnaRada vr = new VerkhovnaRada();
 
 
         showMenu();
-        test(vr);
+        test(vr,f);
 
 
 
     }
-    public static void test(VerkhovnaRada vr){
+    public static void test(VerkhovnaRada vr,Fraction f){
         Scanner scanner = new Scanner(System.in);
         int value = 0;
         do {
             System.out.println("Введіть номер: ");
             value = scanner.nextInt();
-             vr = new VerkhovnaRada();
-            Fraction f = new Fraction("q");
+
+
             switch (value) {
                 case 1:
                     vr.addFraction();
@@ -44,6 +44,8 @@ public class Main {
                     break;
                 case 6:
                     vr.addDelegateToFraction();
+
+                    System.out.println(f.delegateList);
                     break;
                 case 7:
                     vr.removeDelegateFromFraction();

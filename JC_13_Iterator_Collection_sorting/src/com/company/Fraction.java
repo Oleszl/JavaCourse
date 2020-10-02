@@ -9,9 +9,7 @@ public class Fraction {
     ArrayList<Delegate> delegateList = new ArrayList<>();
 
 
-
-
-   private String name;
+    private String name;
 
     public String getName() {
         return name;
@@ -29,7 +27,8 @@ public class Fraction {
 
     }
 
-Delegate delegate = null;
+    Delegate delegate = null;
+
     public void addDelegate(Fraction fraction) {
 
         Scanner scanner = new Scanner(System.in);
@@ -47,18 +46,10 @@ Delegate delegate = null;
         System.out.println("Введіть чи хабарник депутат: ");
         boolean bribe = scanner.nextBoolean();
 
-        delegate = new Delegate(weight, height, lastname, name, age, bribe,fraction);
+        delegate = new Delegate(weight, height, lastname, name, age, bribe, fraction);
 
         delegate.giveBribe();
-            delegateList.add(delegate);
-            showAllDelegate();
-
-
-
-
-
-
-
+        delegateList.add(delegate);
     }
 
     public void bribeCheck() {
@@ -95,7 +86,7 @@ Delegate delegate = null;
         System.out.println("Список усіх депутатів фракції: ");
 
         Iterator<Delegate> iterator = delegateList.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext()) {
             Delegate delegate = iterator.next();
             System.out.println(delegate);
 
@@ -109,8 +100,6 @@ Delegate delegate = null;
                 "name='" + name + '\'' +
                 '}';
     }
-
-
 
 
 }

@@ -14,10 +14,16 @@ public class Main {
         Employee employee1 = new Employee("Oles", "Sukmanovskyi", 25000);
         Employee employee2 = new Employee("Nazar", "Kovalchuk", 35000);
         Employee employee3 = new Employee("Oleg", "Bodnar", 14000);
+        Employee employee4 = new Employee("Oleg2", "Bodnar2", 7000);
+        Employee employee5 = new Employee("Oleg3", "Bodnar3", 2000);
+        Employee employee6 = new Employee("Oleg4", "Bodnar4", 8950);
 
         employeeSet.add(employee1);
         employeeSet.add(employee2);
         employeeSet.add(employee3);
+        employeeSet.add(employee4);
+        employeeSet.add(employee5);
+        employeeSet.add(employee6);
 
         TreeSet<Employee> treeSet = new TreeSet<>(employeeSet);
 

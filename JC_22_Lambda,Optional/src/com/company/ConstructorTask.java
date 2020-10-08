@@ -18,9 +18,6 @@ public class ConstructorTask {
         this.surname = surname;
     }
 
-    public ConstructorTask(ConstructorTask constructorTask, ConstructorTask constructorTask1, ConstructorTask constructorTask2) {
-
-    }
 
 
     @Override

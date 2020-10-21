@@ -98,6 +98,7 @@ public class Collection {
                 System.out.print(next() + " ");
             }
         }
+
     }
 
 }

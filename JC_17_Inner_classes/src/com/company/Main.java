@@ -73,9 +73,10 @@ public class Main {
         System.out.println("\nTask 5:  ");
         Collection.task5 task5 = new Collection.task5();
         task5.task5();
+    }
 
 
 
 
     }
-}
+
